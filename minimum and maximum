@@ -1,0 +1,46 @@
+//Minimum and Maximum chacker 
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("---minimum and maximum number chacker--");
+         System.out.print("Enter The First Number:");
+        int firstNumber = sc.nextInt();
+        
+        System.out.print("Enter The Second Number:");
+        int secondNumber = sc.nextInt();
+        
+        System.out.print("Enter The Third Number:");
+        int thirdNumber = sc.nextInt();
+
+       
+        
+        if(firstNumber >= secondNumber && firstNumber >= thirdNumber  ){
+            System.out.println(firstNumber+" is Maximum Number");
+        }
+        
+        else if(secondNumber>= firstNumber && secondNumber>=thirdNumber ) {
+            System.out.println(secondNumber+" is Maximum Number");
+        }
+        else if(thirdNumber >= firstNumber && thirdNumber >= secondNumber){
+            System.out.println(thirdNumber+" is Maximum number ");
+        }
+        else{
+            System.out.println("Write any 3 value");
+        }
+        // here is the minimum 
+         if(firstNumber <= secondNumber && firstNumber <=thirdNumber  ){
+            System.out.println(firstNumber+" is minimum Number");
+        }
+        
+        else if(secondNumber<= firstNumber && secondNumber<=thirdNumber ) {
+            System.out.println(secondNumber+" is minimum Number");
+        }
+        else if(thirdNumber <= firstNumber && thirdNumber <= secondNumber){
+            System.out.println(thirdNumber+" is minimum number ");
+        }
+        else{
+            System.out.println("Write any 3 value");
+        }
+    }
+}
