@@ -175,7 +175,117 @@ class Main {
 </pre>
 </div>
 
+**6. value to word/letter**
+<div style="overflow-x:auto;">
+<pre>
+<code>
 
+import java.util.Scanner;
+
+class Main {
+
+    public static void main(String[] args) {
+    
+        Scanner sc=new Scanner (System.in);
+        
+        
+        System.out.print("Enter any digit between 0-9:");
+        int number = sc.nextInt();
+        if(number == 0){
+            System.out.println("ZERO");
+        }else if (number ==1){
+            System.out.println("ONE");
+        }
+        else if(number==2){
+            System.out.println("TWO");
+        }else if (number == 3){
+            System.out.println("Three");
+        }else if(number == 4){
+            System.out.println("Four");
+        }else if(number == 5){
+            System.out.println("Five");
+        }else if(number == 6){
+            System.out.println("six");
+        }else if(number == 7){
+            System.out.println("Seven");
+        }else if(number == 8){
+            System.out.println("Eight");
+        }else if(number == 9){
+            System.out.println("Nine");
+        }else{
+            System.out.println("please Enter a digit between 0-9");
+        }
+        }
+    
+    }
+
+</code>
+</pre>
+</div>
+
+**7. odd or Even**
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+
+class Main {
+
+    public static void main(String[] args) {
+    
+        Scanner sc= new Scanner(System.in);
+     int number;
+     System.out.println("----Chack Even and odd value ---------");
+     System.out.print("Enter any number:");
+     number=sc.nextInt();
+     if(number % 2==0){
+         System.out.println("Even number");
+     
+     }else {
+          System.out.println("odd value"); //we can use another way like "number%2 !=0"
+     }
+        
+        
+    }
+}
+
+</code>
+</pre>
+</div>
+
+**8.voter check**
+<div style="overflow-x:auto;">
+<pre>
+<code>
+
+import java.util.Scanner;
+
+class Main {
+
+    public static void main(String[] args) {
+    
+        Scanner sc= new Scanner(System.in);
+        System.out.println("------Chack you are Valid or invalid for voter-----");
+        int number;
+        String name;
+        
+        System.out.print("Enter your Name :");
+        name=sc.nextLine();
+        System.out.print("Enter your age :");
+        number=sc.nextInt();
+        sc.nextLine();
+        if (number>=18){
+            System.out.println("Congretulation "+name+" you are valid for voter");
+        }else{
+            System.out.println("Sorry "+name+" you are Invalid.");
+        }
+        
+        
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
