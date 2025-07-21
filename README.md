@@ -150,6 +150,30 @@ class Main {
 </pre>
 </div>
 
+**5. pass or fail**
+<div style="overflow-x:auto;">
+<pre>
+<code>
+//pass or fail chack
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("-----pass or fail chacker----");
+        System.out.print("Enter your marks between 0-100:");
+        int marks = sc.nextInt();
+        if (marks>=33){
+            System.out.println("You are pass!");
+        }else if(marks<33){
+            System.out.println("you are fail!");
+        }else if (marks>100){
+            System.out.println("Allart!..enter your marks between 0-100");
+        }
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
