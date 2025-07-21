@@ -125,6 +125,31 @@ class Main {
 </div>
 
 
+**Leap year**
+<div style="overflow-x:auto;">
+<pre>
+<code>
+//leap year
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("-----Leap year chacker----");
+        System.out.print("Enter a year:");
+        int year = sc.nextInt();
+        if(year%400==0){
+            System.out.println("Leap year");
+        }else if(year%4==0 && year%100 !=0){
+            System.out.println("leap year");
+        }else{
+            System.out.println("not leap year");
+        }
+    }
+}
+</code>
+</pre>
+</div>
+
 
 
 
